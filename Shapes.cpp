@@ -42,13 +42,11 @@ int main(){
         case 3:
             cout << "What height would you desire?";
             cin >> length;
-            cout << "What base length would you desire?";
-            cin >> width;
-            for(int row = 0; row< length; row++){
-                for(int i = width - row -1; i > 0; i--){
+            for(int row = 1; row<= length; row++){
+                for(int i = 0; i < length - row; i++){
                     cout << " ";
                 }
-                for(int j = 0; j < (row*2 )+1; j++){
+                for(int j = 0; j < (row*2 )-1; j++){
                     cout << "*";
                 }
                 cout << endl;
